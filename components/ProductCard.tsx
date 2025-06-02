@@ -1,13 +1,21 @@
-'use client'
+"use client";
 import { ProductType } from "@/lib/types";
 import { Expand, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import IconButton from "./ui/IconButton";
 import Currency from "./ui/Currency";
+import { useRouter } from "next/navigation";
 
 export default function ProductCard({ product }: { product: ProductType }) {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(`/product/${product?.id}`);
+  };
   return (
-    <div className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4 ">
+    <div
+      onClick={handleClick}
+      className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4 "
+    >
       {/* Images and Actions */}
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image
@@ -31,12 +39,8 @@ export default function ProductCard({ product }: { product: ProductType }) {
       </div>
       {/* Description */}
       <div>
-        <p className="font-semibold text-lg">
-          {product.name}
-        </p>
-        <p className="text-sm to-gray-500">
-          {product.category?.name}
-        </p>
+        <p className="font-semibold text-lg">{product.name}</p>
+        <p className="text-sm to-gray-500">{product.category?.name}</p>
       </div>
       {/* Price */}
       <div>
