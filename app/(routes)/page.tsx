@@ -6,7 +6,7 @@ import ProductList from "@/components/ProductList";
 
 export default async function PageStore() {
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard("affbc9c2-481c-487f-870f-4709e20ca303");
+  const billboard = await getBillboard("989a5611-4409-4590-94df-ea7fada3cc3b");
   return (
     <Container>
       <div className="space-y-10 pb-10">
