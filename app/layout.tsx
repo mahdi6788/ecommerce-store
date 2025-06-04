@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -19,13 +20,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={urbanist.className}>
-        <Toaster/>
-        <ModalProvider/>
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Toaster />
+          <ModalProvider />
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

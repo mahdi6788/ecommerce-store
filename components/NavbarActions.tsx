@@ -4,6 +4,7 @@ import { Button } from "./ui/Button";
 import { useEffect, useState } from "react";
 import { useCart } from "@/hook/use-cart";
 import { useRouter } from "next/navigation";
+import { ThemeToggle } from "./ui/ThemeToggle";
 
 export default function NavbarActions() {
   const cart = useCart();
@@ -18,6 +19,7 @@ export default function NavbarActions() {
 
   return (
     <div className="flex items-center gap-x-4 ml-auto ">
+      <ThemeToggle />
       <Button
         onClick={() => router.push("/cart")}
         className="flex items-center rounded-full bg-black px-4 py-2"
