@@ -44,11 +44,11 @@ export default function ProductCard({ product }: { product: ProductType }) {
           <div className="flex justify-center gap-x-6">
             <IconButton
               onClick={onPreview}
-              icon={<Expand size={20} className="text-secondary-foreground" />}
+              icon={<Expand size={20} color="green" />}
             />
             <IconButton
               onClick={onAddToCart}
-              icon={<ShoppingCart size={20} className="text-secondary-foreground" />}
+              icon={<ShoppingCart size={20} color="green" />}
             />
           </div>
         </div>
