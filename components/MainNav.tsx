@@ -19,8 +19,8 @@ export default function MainNav({ data }: { data: CategoryType[] }) {
           key={route.href}
           href={route.href}
           className={cn(
-            "text-sm font-medium transition-colors hover:text-black",
-            route.active ? "text-black" : "text-neutral-500"
+            "text-sm font-medium transition-colors",
+            route.active && "text-muted-foreground"
           )}
         >
           {route.label}

@@ -32,10 +32,10 @@ export default function MobileFilters({ sizes, colors }: MobileFiltersProps) {
         onClose={onClose}
       >
         {/* Backgrounf */}
-        <div className="lfex inset-0 bg-black" />
+        <div className="lfex inset-0 bg-primary" />
         {/* Dialog position */}
         <div className="flex fixed inset-0 z-40">
-          <DialogPanel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-6 shadow-xl">
+          <DialogPanel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-secondary py-4 pb-6 shadow-xl">
             {/* Close Button */}
             <div className="flex items-center justify-end px-4">
               <IconButton icon={<X size={15} />} onClick={onClose} />

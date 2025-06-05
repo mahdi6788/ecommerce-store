@@ -30,7 +30,7 @@ export default async function CategoryPage({
   const category = await getCategory(categoryId);
 
   return (
-    <div className="bg-white">
+    <div className="">
       <Container>
         <Billboard data={category.billboard} />
         <div className="px-4 sm:px-6 md:px-8 pb-24">

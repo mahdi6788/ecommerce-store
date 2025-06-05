@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function GalleryTab({ image }: { image: ImageType }) {
   return (
-    <Tab className="relative flex aspect-square cursor-pointer items-center justify-center rounded-md bg-white">
+    <Tab className="relative flex aspect-square cursor-pointer items-center justify-center rounded-md ">
       {({ selected }) => (
         <div>
           <span className="absolute h-full w-full aspect-square inset-0 overflow-hidden rounded-md">
@@ -19,7 +19,7 @@ export default function GalleryTab({ image }: { image: ImageType }) {
           <span
             className={cn(
               "absolute inset-0 rounded-md ring-2 ring-offset-2",
-              selected ? "ring-black" : "ring-transparent"
+              selected ? "ring-primary" : "ring-transparent"
             )}
           />
         </div>

@@ -47,8 +47,8 @@ export default function Filter({ data, name, valueKey }: FilterProps) {
           <div key={filter.id} className="flex items-center">
             <Button
               className={cn(
-                "rounded-md text-sm text-gray-800 p-2 bg-white border border-gray-300",
-                selectValue === filter.id && "bg-black text-white"
+                "rounded-md text-sm text-secondary p-2 border ",
+                selectValue === filter.id && "bg-secondary text-primary"
               )}
               onClick={() => onClick(filter.id)}
             >

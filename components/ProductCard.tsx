@@ -30,10 +30,10 @@ export default function ProductCard({ product }: { product: ProductType }) {
   return (
     <div
       onClick={handleClick}
-      className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
+      className=" group cursor-pointer rounded-xl border p-3 space-y-4"
     >
       {/* Images and Actions */}
-      <div className="aspect-square rounded-xl bg-gray-100 relative">
+      <div className="aspect-square rounded-xl relative">
         <Image
           src={product?.images[0]?.url}
           alt="Image"
@@ -44,11 +44,11 @@ export default function ProductCard({ product }: { product: ProductType }) {
           <div className="flex justify-center gap-x-6">
             <IconButton
               onClick={onPreview}
-              icon={<Expand size={20} className="text-gray-600" />}
+              icon={<Expand size={20} className="text-secondary-foreground" />}
             />
             <IconButton
               onClick={onAddToCart}
-              icon={<ShoppingCart size={20} className="text-gray-600" />}
+              icon={<ShoppingCart size={20} className="text-secondary-foreground" />}
             />
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
       {/* Description */}
       <div>
         <p className="font-semibold text-lg">{product.name}</p>
-        <p className="text-sm text-gray-500">{product.category?.name}</p>
+        <p className="text-sm text-secondary-foreground">{product.category?.name}</p>
       </div>
       {/* Price */}
       <div>
