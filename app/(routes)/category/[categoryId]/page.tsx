@@ -14,13 +14,16 @@ export default async function CategoryPage({
   searchParams,
 }: {
   params: Promise<{ categoryId: string }>;
-  searchParams: { colorId: string; sizeId: string };
+  searchParams: Promise<{ colorId: string; sizeId: string }>;
 }) {
   const { categoryId } = await params;
+  const {colorId} = await searchParams
+  const {sizeId} = await searchParams
+
   const products = await getProducts({
     categoryId: categoryId,
-    colorId: searchParams.colorId,
-    sizeId: searchParams.sizeId,
+    colorId: colorId,
+    sizeId: sizeId,
   });
   const sizes = await getSizes();
   const colors = await getColors();

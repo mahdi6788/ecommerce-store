@@ -1,10 +1,10 @@
 "use client"
-import { Category } from "@/lib/types";
+import { CategoryType } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function MainNav({ data }: { data: Category[] }) {
+export default function MainNav({ data }: { data: CategoryType[] }) {
   const pathname = usePathname();
 
   const routes = data.map((route) => ({
