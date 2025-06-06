@@ -96,8 +96,5 @@ Both applications are built with Next.js 15 and share a common backend API and d
 - **Authentication**
   - Clerk
 
-- **Payment Processing**
-  - 
-
 - **Image Storage**
   - Cloudinary
