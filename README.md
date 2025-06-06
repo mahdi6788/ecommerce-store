@@ -9,6 +9,11 @@ A modern, full-featured e-commerce platform built with Next.js 15, consisting of
 1. **Admin Dashboard** - A comprehensive admin panel for store management
 2. **Store** - The customer-facing storefront
 
+## 🚀 Live Demo
+
+[View Live Application](https://e-commerce-pied-one-64.vercel.app)
+[View Live Application](https://e-commerce-pied-one-64.vercel.app)
+
 ## Architecture
 
 This project uses a multi-zone architecture with two separate Next.js applications that work together:
