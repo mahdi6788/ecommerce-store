@@ -11,8 +11,8 @@ A modern, full-featured e-commerce platform built with Next.js 15, consisting of
 
 ## 🚀 Live Demo
 
-[View Live Application](https://e-commerce-pied-one-64.vercel.app)
-[View Live Application](https://ecommerce-store-iota-liard.vercel.app)  
+**Admin Dashboard**: [View Live Application](https://e-commerce-pied-one-64.vercel.app)   
+**Store**: [View Live Application](https://ecommerce-store-iota-liard.vercel.app)  
 
 ## Architecture
 
