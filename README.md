@@ -23,7 +23,7 @@ This project uses a multi-zone architecture with two separate Next.js applicatio
   - Analytics and reporting features
   - Content management system
 
-- **Customer Store** ([Repository](https://github.com/mahdi6788/ecommerce-store.git))
+- ** Store** ([Repository](https://github.com/mahdi6788/ecommerce-store.git))
   - Customer-facing storefront
   - Product browsing and search
   - Shopping cart and checkout
@@ -59,7 +59,7 @@ Both applications are built with Next.js 15 and share a common backend API and d
 - **Settings**
   - Store configuration
 
-### Customer Store
+### Store
 
 - **Product Browsing**
   - Browse products by category
